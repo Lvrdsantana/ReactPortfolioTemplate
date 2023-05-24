@@ -23,13 +23,13 @@ export default function About() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
             </p>
-            <p><span style={{color: info.baseColor}}>skills/tools <span
+            <p><span style={{color: info.baseColor}}>competence/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
-            <p style={{color: info.baseColor}}> Proficient With</p>
+            <p style={{color: info.baseColor}}> Compétent avec</p>
             <ul className={Style.skills}>
                 {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Exposed To</p>
+            <p style={{color: info.baseColor}}> maitrise moyenne</p>
             <ul className={Style.skills}>
                 {info.skills.exposedTo.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
@@ -40,7 +40,7 @@ export default function About() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
                 hobbies/interests</p>
-            <p><span style={{color: info.baseColor}}>hobbies/interests <span
+            <p><span style={{color: info.baseColor}}>hobbies <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
